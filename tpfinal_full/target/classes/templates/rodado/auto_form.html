@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:insert="fragments/navbar :: *"></th:block>
+<h2 th:text="${auto != null} ? 'Editar Auto' : 'Agregar Auto'"></h2>
+
+<form th:action="${auto != null} ? @{'/rodado/actualizarAuto/' + ${idCon} + '/' + ${auto.id}} : @{'/rodado/guardarAuto/' + ${idCon}}"
+      method="post" th:object="${auto != null} ? ${auto} : ${new com.ifes.dom.Auto()}">
+
+  Marca: <input type="text" th:field="*{marca}"><br>
+  Modelo: <input type="text" th:field="*{modelo}"><br>
+  Caja automática: <input type="checkbox" th:field="*{cajaAutomatica}"><br>
+  Puertas: <input type="number" min="2" max="5" th:field="*{puertas}"><br>
+
+  <button type="submit">Guardar</button>
+  <a th:href="@{'/concesionaria/ver/' + ${idCon}}">Cancelar</a>
+</form>
+</body>
+</html>

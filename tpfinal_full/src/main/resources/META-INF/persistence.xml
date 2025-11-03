@@ -1,0 +1,17 @@
+
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="2.2">
+  <persistence-unit name="mysql" transaction-type="RESOURCE_LOCAL">
+    <provider>org.datanucleus.api.jdo.JDOPersistenceProvider</provider>
+    <properties>
+      <property name="javax.jdo.option.ConnectionURL" value="jdbc:mysql://localhost:3306/tpfinal?serverTimezone=UTC"/>
+      <property name="javax.jdo.option.ConnectionDriverName" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.jdo.option.ConnectionUserName" value="root"/>
+      <property name="javax.jdo.option.ConnectionPassword" value="Prog1234"/>
+      <property name="datanucleus.schema.autoCreateAll" value="true"/>
+      <property name="datanucleus.schema.autoCreateColumns" value="true"/>
+      <property name="datanucleus.schema.autoCreateTables" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>

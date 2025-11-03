@@ -1,0 +1,14 @@
+com\ifes\configuracion\Configuracion.class
+com\ifes\controlador\HomeController.class
+com\ifes\controlador\RodadoController.class
+com\ifes\controlador\ConcesionariaController.class
+com\ifes\repositorio\IRepositorio.class
+com\ifes\dom\Camioneta.class
+com\ifes\dom\Auto.class
+com\ifes\app\App.class
+com\ifes\servicio\ServicioConcesionaria.class
+com\ifes\dom\Rodado.class
+com\ifes\repositorio\RepositorioConcesionaria.class
+com\ifes\dom\Concesionaria.class
+com\ifes\dom\Contacto.class
+com\ifes\repositorio\Repositorio.class

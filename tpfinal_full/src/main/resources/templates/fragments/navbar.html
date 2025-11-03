@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+  <!-- Fragmento reutilizable -->
+  <nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Concesionaria</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="/concesionaria/listar">Listado</a></li>
+          <li class="nav-item"><a class="nav-link" href="/concesionaria/crear">Registrar concesionaria</a></li>
+          <li class="nav-item"><a class="nav-link" href="/rodado/informe">Informe</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
